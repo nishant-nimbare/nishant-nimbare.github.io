@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f6f7;	
+    font-family: 20px 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a.btn:hover {
+    background-color: #545454;
+    color: #ffffff;
+    width: 35%;
+}
