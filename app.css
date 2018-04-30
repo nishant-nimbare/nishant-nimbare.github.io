@@ -2,7 +2,8 @@ body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #f5f6f7;	
+
+    color: #f1f1f1;
     font-family: 20px 'Open Sans', sans-serif;
     line-height: 1.8;
 }
@@ -16,4 +17,8 @@ a.btn:hover {
     background-color: #545454;
     color: #ffffff;
     width: 35%;
+}
+
+footer p a {
+    color: rgba(0,0,0,0.8);
 }
