@@ -13,12 +13,28 @@ body {
     padding-bottom: 50px;
 }
 
-a.btn:hover {
-    background-color: #545454;
-    color: #ffffff;
-    width: 35%;
-}
-
 footer p a {
     color: rgba(0,0,0,0.8);
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+#contact a i {
+    color: #f1f1f1;
+    font-size: 3rem;
+    margin: 5px;
+}
+
+#contact i:hover {
+    color: #d1d1d1;
+}
+
+footer a i.fa {
+    font-size: inherit;
 }
