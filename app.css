@@ -38,3 +38,11 @@ footer p a {
 footer a i.fa {
     font-size: inherit;
 }
+
+.nav-element {
+	font-family: 20px 'Open Sans', sans-serif;
+	font-size: 30px;
+	margin: 5px;
+	margin-top: 10px;	
+	font-color:#ffffff;
+}
