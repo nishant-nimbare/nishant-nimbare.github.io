@@ -5,7 +5,7 @@ body {
 
     color: #f1f1f1;
     font-family: 20px 'Open Sans', sans-serif;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .container-fluid {
@@ -27,7 +27,7 @@ footer p a {
 
 #contact a i {
     color: #f1f1f1;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 5px;
 }
 
@@ -41,8 +41,21 @@ footer a i.fa {
 
 .nav-element {
 	font-family: 20px 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 3rem;
 	margin: 5px;
 	margin-top: 10px;	
 	font-color:#ffffff;
+}
+
+a{
+	color : #ffff00;
+}	
+
+h1{
+	color : #ffa500;
+}	
+
+.resume a{
+	color:#ffffff;
+	   font-size: 3rem;
 }
