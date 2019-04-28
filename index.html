@@ -1,72 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 	<title>Nishant Nimbare</title>
-	<meta charset="utf-8">
-	<meta name="viewport" 
-	content ="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"  type="text/css">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<link href="./app.css" rel="stylesheet" type="text/css">
-	 
-</head>
-
-<body class="text-center">
-
-
-	<!-- nav bar-->
-	<nav class="navbar">
-	<div class="container nav-container">
-		<ul class="nav navbar-nav navbar-right">
-			<il class="active nav-element"><a href="#"><i class="fa fa-home"></i></a></il>
-			<il class="nav-element"><a href="./resume.html"><i class="fa fa-file"></i></a></il>
-			<il class="nav-element"><a href="#contacts"><i class="fa fa-contao"></i></a></il>
-		</ul>
-	</div>	
-	</nav>
 	
+</head>
+<body onload="init()">
 
-	<div class="container-fluid">
-		<img src="web_hi_res_512_opt.png" class="image-circle" alt="image">
-		<h1>Nishant Nimbare</h1>
-	</div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="./NishantNimbare_resume.pdf">Resume</a></li>
 
-	<div class="container-fluid">
-			<p>I am currently studying for B.E.(Computer Engineering) in DJ Sanghvi College of Engineering .</p>
-			<p>I am interested in android app development.</p>
-	</div>
+</ul>
 
-	<div  class="container-fluid">
-		<h6>CONNECT WITH ME</h6>
-		<div id="contacts" class="row">
-			<div class="col" id="contact">
-				<a href="https://github.com/nishant-nimbare">
-					<i class="fa fa-github"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/nishant-nimbare-91b47b163/">
-					<i class="fa fa-linkedin"></i>
-				</a>
-				<a href="mailto:nishantnimbare@gmail.com">
-					<i class="fa fa-envelope"></i>
-				</a>
-			</div>
-		</div>
-	</div>
+<canvas id="myCanvas" width="200" height="400">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+<img src="./logo.png" id="logo">
+<div id="content" height="500" align="center">
+	<h1>Nishant Nimbare</h1>
+	<p>I am currently studying for B.E.(Computer Engineering) in DJ Sanghvi College of Engineering .</p>
+	<p>I am interested in android app development.</p>	
+</div>
 
-	<footer class="container-fluid">
-		<p>Checkout the source code of this web page on&ThickSpace;<a href="https://github.com/nishant-nimbare/nishant-nimbare.github.io"><i class="fa fa-github"></i> Github. </a></p>
-	</footer>
-
+<footer align='center'>
+	<p>Checkout the source code of this web page on&ThickSpace;<a href="https://github.com/nishant-nimbare/nishant-nimbare.github.io"><i style="color:white;"></i> Github. </a></p>
+</footer>
+<script src="./app.js"></script>
 </body>
-
 </html>
