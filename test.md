@@ -1,7 +1,6 @@
 ---
-layout: page
-title: "Test"
-permalink: /test/
+layout: post
+title: Blogging Like a Hacker
 ---
 
 # testing
