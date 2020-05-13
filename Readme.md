@@ -14,11 +14,11 @@ I am currently studying for B.E.(Computer Engineering) in DJ Sanghvi College of 
 [![alt text][5.1]][5]
 
 
-[1.1]: https://img.icons8.com/carbon-copy/24/000000/email.png (email)
-[2.1]: https://img.icons8.com/material-outlined/24/000000/github.png (github icon with padding)
-[3.1]: https://img.icons8.com/wired/24/000000/chef-hat.png (codeChef)
-[4.1]: https://img.icons8.com/android/24/000000/linkedin.png (linkedIn)
-[5.1]: https://img.icons8.com/ios-filled/24/000000/gitlab.png (gitlab)
+[1.1]: https://img.icons8.com/carbon-copy/24/000000/email.png
+[2.1]: https://img.icons8.com/material-outlined/24/000000/github.png
+[3.1]: https://img.icons8.com/wired/24/000000/chef-hat.png
+[4.1]: https://img.icons8.com/android/24/000000/linkedin.png
+[5.1]: https://img.icons8.com/ios-filled/24/000000/gitlab.png
 
 [1]: mailto:nishantnimbare@gmail.com
 [2]: http://www.github.com/nishant-nimbare
