@@ -3,6 +3,13 @@
         "name":"Neo-CLI",
         "desc":" bash script for my day-to-day tasks ",
         "stack":" Bash Scripting ",
-        "link":"https://github.com/nishant-nimbare/neo-cli"
+        "link":"https://github.com/nishant-nimbare/neo-cli",
+    },
+    {
+        "name":"Nlp to Sql",
+        "desc":" This was developed for the submission of codeShastra ( round 0), in a group of 4. Aim was to translate user queries in plain english to valid sql commands. ",
+        "stack":" Natural Language Processing, Nodejs",
+        "link":"https://github.com/chinmaykhamkar/nlp-to-sql",
+        "result":"We made a nodejs rest server for translation. Using naive bayes classifier on the token we were are able translate simple queries like select, update, delete, etc. Qualified for the next round ;)"
     }
 ]
