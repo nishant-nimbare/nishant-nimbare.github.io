@@ -1,10 +1,10 @@
 [
     {
         "name":"Home",
-        "link":"./"
+        "link":"https://nishant-nimbare.github.io/"
     },
     {
         "name":"My Projects",
-        "link":"./projects"
+        "link":"https://nishant-nimbare.github.io/projects"
     }
 ]

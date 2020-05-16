@@ -1,15 +1,94 @@
 [
     {
-        "name":"Neo-CLI",
-        "desc":" bash script for my day-to-day tasks ",
-        "stack":" Bash Scripting ",
-        "link":"https://github.com/nishant-nimbare/neo-cli",
+        "name": "Neo-CLI",
+        "desc": " bash script for my day-to-day tasks ",
+        "stack": " Bash Scripting ",
+        "link": "https://github.com/nishant-nimbare/neo-cli",
     },
     {
-        "name":"Nlp to Sql",
-        "desc":" This was developed for the submission of codeShastra ( round 0), in a group of 4. Aim was to translate user queries in plain english to valid sql commands. ",
-        "stack":" Natural Language Processing, Nodejs",
-        "link":"https://github.com/chinmaykhamkar/nlp-to-sql",
-        "result":"We made a nodejs rest server for translation. Using naive bayes classifier on the token we were are able translate simple queries like select, update, delete, etc. Qualified for the next round ;)"
+        "name": "Nlp to Sql",
+        "desc": " This was developed for the submission of codeShastra ( round 0), in a group of 4. Aim was to translate user queries in plain english to valid sql commands. ",
+        "stack": " Natural Language Processing, Nodejs",
+        "link": "https://github.com/chinmaykhamkar/nlp-to-sql",
+        "result": "We made a nodejs rest server for translation. Using naive bayes classifier on the token we were are able translate simple queries like select, update, delete, etc. Qualified for the next round ;)"
+    },
+    {
+        "name": "Arogya",
+        "link": "https://github.com/nishant-nimbare/sih-19",
+        "desc": "Our team submission for SIH grand finale 2020. Aim was to make a Health monitoring at low bandwidth, so that remote patients would be kept in check virtually.",
+        "stack": "WebRTC, React Native",
+        "result": "App supports fetching of patients parameters like heartbeats, temperatures, etc collected through sensors (Raspberry Pi) and transferred over udp (webrtc) so that bandwith consumed is less. Also patients live feed can be send to app."
+    },
+    {
+        "name": "canteen-android-app",
+        "link": "https://github.com/nishant-nimbare/canteen-android-app",
+        "desc": "Order from the canteen on your phone! This was a my project as a mentee in Unicode (a open-source club in DJSCE)",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "Notes",
+        "link": "https://github.com/nishant-nimbare/Notes",
+        "desc": "light-weight android application for saving text notes offline",
+        "stack": "Android App development, java, sqlite"
+    },
+    {
+        "name": "notes-rest",
+        "link": "https://github.com/nishant-nimbare/notes-rest",
+        "desc": "A nodejs REST api for note management system. Perform CRUD for notes ! ",
+        "stack": "Nodejs, Expressjs, MongoDb"
+    },
+    {
+        "name": "QuotesWall",
+        "link": "https://github.com/nishant-nimbare/QuotesWall",
+        "desc": "Andriod app for setting wallpapers of random images with random quotes overlaid on them.",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "Music-player",
+        "link": "https://github.com/nishant-nimbare/Music-player",
+        "desc": "Music player for android. scans and plays all the offline available song, supports background play",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "StaffApp",
+        "link": "https://github.com/YashJaveri/StaffAppreciation",
+        "desc": "Submission for tsec hackathon. We made a staff appriciation app that gamifies the formal workspace with leaderboards, etc.",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "DS Miniproject",
+        "link": "https://github.com/nishant-nimbare/miniproject-ds",
+        "desc": "Miniproject for data structures course in the curriculum. A command-line based ordering system :p",
+        "stack": "c, Linked Lists"
+    },
+    {
+        "name": "oopm miniproject",
+        "link": "https://github.com/nishant-nimbare/oopm-miniproject",
+        "desc": "Miniproject for OOPM (java) course in the curriculum. Made a 'book-sharing' desktop application with javax (GUI) and sql ",
+        "stack": "Java, Sql"
+    },
+    {
+        "name": "Popular Movies App",
+        "link": "https://github.com/nishant-nimbare/popular-movies",
+        "desc": "popular movies android app with TMDB api ",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "react-native-beginner",
+        "link": "https://github.com/nishant-nimbare/react-native-beginner",
+        "desc": "A pomodoro timer, a calculator and a random quote generator in one app.",
+        "stack": "React Native"
+    },
+    {
+        "name": "Restaurants-App",
+        "link": "https://github.com/nishant-nimbare/Restaurants-App",
+        "desc": "restaurants app using zomato api",
+        "stack": "Android App development, java"
+    },
+    {
+        "name": "TicTacToe",
+        "link": "https://github.com/nishant-nimbare/TicTacToe",
+        "desc": "tic tac toe on android",
+        "stack": "Android App development, java"
     }
 ]
