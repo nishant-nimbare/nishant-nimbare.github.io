@@ -1,4 +1,8 @@
 title: Nishant Nimbare
 description: I am currently studying for B.E.(Computer Engineering) in DJ Sanghvi College of Engineering
 theme: minima
+header_pages:
+  - Readme.md
+  - projects.md
+  - https://docs.google.com/document/d/1nnN4syNA7pYgsiBnxq18PC4Dx9zuMhNPRTnJfc6Adxk/edit?usp=sharing
 
