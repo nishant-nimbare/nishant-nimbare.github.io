@@ -1,26 +1,32 @@
 ---
-title: "Nishant Nimbare"
+title: "Portfolio"
 layout: single
 author_profile: true
 permalink: /
 ---
 
-# Experience
+## Experience
 
-## Coutloot , Mumbai 
+<br>
+
+### Coutloot , Mumbai 
 Backend development intern.<br>
-_June - August 2019_
+_June - August 2019_<br>
+<br>
 
-## Omic Healthcare, Mumbai
+### Omic Healthcare, Mumbai
 App development intern, (react native).<br>
-_Feb - April 2019_
+_Feb - April 2019_<br>
+<br>
 
-## [Unicode](https://djunicode.github.io/about/)
+### [Unicode](https://djunicode.github.io/about/)
 Mentee,  _2018 - 19_ <br>
 Mentor,   _2019 - present_ <br>
 
 
-# Certificates
+<br><br><br>
+
+## Certificates
 
 - [Algorithmic-toolbox](https://drive.google.com/file/d/1RMBBhmT2nhFp3I6sYA9aepBKCwYFFqAL/view?usp=drivesdk) , US San Diego on coursera.
    <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/Algorithmic-toolBox)
