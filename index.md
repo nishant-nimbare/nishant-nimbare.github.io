@@ -1,5 +1,7 @@
 ---
-title: "Home"
+title: "Nishant Nimbare"
+layout: single
+author_profile: true
 permalink: /
 ---
 
@@ -26,11 +28,13 @@ Mentor,   _2019 - present_ <br>
 - [Data structures](https://drive.google.com/file/d/1xXtkAQyULSEeOx2KhTUSiGHleS10uhke/view?usp=drivesdk) , US San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/Data_structures)
 
+- [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , US San Diego on coursera.
+  <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/graphs)
 
 
-# connect with me ;)
+<!-- # connect with me ;) -->
 <!-- display the social media buttons in your README -->
-
+<!-- 
 [![alt text][1.1]][1]
 [![alt text][2.1]][2]
 [![alt text][3.1]][3]
@@ -49,4 +53,4 @@ Mentor,   _2019 - present_ <br>
 [3]: https://www.codechef.com/users/nishantnimbare
 [4]: https://www.linkedin.com/in/nishant-nimbare/
 [5]: https://gitlab.com/nishant-nimbare
-
+ -->
