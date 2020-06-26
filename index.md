@@ -28,13 +28,13 @@ Mentor,   _2019 - present_ <br>
 
 ## Certificates
 
-- [Algorithmic-toolbox](https://drive.google.com/file/d/1RMBBhmT2nhFp3I6sYA9aepBKCwYFFqAL/view?usp=drivesdk) , US San Diego on coursera.
+- [Algorithmic-toolbox](https://drive.google.com/file/d/1RMBBhmT2nhFp3I6sYA9aepBKCwYFFqAL/view?usp=drivesdk) , UC San Diego on coursera.
    <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/Algorithmic-toolBox)
   
-- [Data structures](https://drive.google.com/file/d/1xXtkAQyULSEeOx2KhTUSiGHleS10uhke/view?usp=drivesdk) , US San Diego on coursera.
+- [Data structures](https://drive.google.com/file/d/1xXtkAQyULSEeOx2KhTUSiGHleS10uhke/view?usp=drivesdk) , UC San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/Data_structures)
 
-- [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , US San Diego on coursera.
+- [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , UC San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/graphs)
 
 
