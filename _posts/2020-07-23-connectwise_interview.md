@@ -1,8 +1,3 @@
----
-layout: post
-title:  "Connectwise Interview"
----
-
 all rounds were online
 
 ## Round 1 : online test
