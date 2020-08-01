@@ -16,4 +16,4 @@ each process has all these segments
 
 threads share segments apart from stack and cpu segments.
 
-![ threads ]( assets/images/diagram-threads.webp )
+![threads](/assets/images/processVthreads.jpg)
