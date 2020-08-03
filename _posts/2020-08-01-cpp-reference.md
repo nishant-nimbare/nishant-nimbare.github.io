@@ -8,7 +8,7 @@ tags:
 ---
 
 
-### Inhertance
+## Inhertance
 
 ```
 // C++ Implementation to show that a derived class 
@@ -52,7 +52,7 @@ class D : private A // 'private' is default for classes
 
 [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/)
 
-#### virtual
+### virtual
 Runtime polymorphism
 ```
 class Base{
@@ -115,7 +115,7 @@ To implement virtual functions, C++ uses a special form of late binding known as
 
 
 
-### Mutex
+## Mutex
 
 https://stackoverflow.com/a/5154174/12613203
 
@@ -156,7 +156,10 @@ int main()
 }
 ```
 
-
+## Free and Delete
+delete operator should only be used either for the pointers pointing to the memory allocated using new operator or for a NULL pointer, and free() should only be used either for the pointers pointing to the memory allocated using malloc() or for a NULL pointer.
+- When the delete operator destroys the allocated memory, then it calls the destructor of the class in C++, whereas the free() function does not call the destructor; it only frees the memory from the heap.
+- The delete operator is faster than the free() function.
 
 
 <br>
