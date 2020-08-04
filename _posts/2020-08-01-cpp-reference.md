@@ -10,7 +10,7 @@ tags:
 
 ## Inhertance
 
-```
+```c++
 // C++ Implementation to show that a derived class 
 // doesn’t inherit access to private data members. 
 // However, it does inherit a full parent object 
@@ -115,11 +115,15 @@ To implement virtual functions, C++ uses a special form of late binding known as
 
 
 
+
+## Exception
+In C++, all exceptions are unchecked, so it is not forced by the compiler to either handle or specify the exception. 
+
 ## Mutex
 
 https://stackoverflow.com/a/5154174/12613203
 
-```
+```c++
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -167,12 +171,13 @@ delete operator should only be used either for the pointers pointing to the memo
 <br>
 <br>
 
-#### Syntax
+
+## Syntax
 input ` cin>>x;`
 output ` cout<<x;`
 
 ##### Arrays
-```
+```c++
 int a[10];
 int arr[] = {1,2,3,4};  //creates arr of size 4
 int arr[6] = { 10, 20, 30, 40 };    //creates an array of size 6, initializes first 4 elements 
@@ -181,7 +186,7 @@ int arr[6] = { 10, 20, 30, 40 };    //creates an array of size 6, initializes fi
 #### STL DataStructures
 
 ##### Vector
-```
+```c++
 vector<int> vec;
 
 .push_back()    //append
@@ -196,7 +201,7 @@ vector<int> vec;
 
 ##### Lists
 non contiguous
-```
+```c++
 list <int> mlist;
 
 .push_back()    //append
@@ -213,7 +218,7 @@ list <int> mlist;
 
 ##### Maps
 
-```
+```c++
 unordered_map<string, int> umap; 
 map<int, int> gquiz1;
 
@@ -224,7 +229,7 @@ map<int, int> gquiz1;
 ```
 
 ##### Sets
-```
+```c++
 unordered_set <string> stringSet ;
 set <int, greater <int> > s1 // default increasing;
 
@@ -236,7 +241,7 @@ set <int, greater <int> > s1 // default increasing;
 
 
 #### Files
-```
+```c++
 fstream myfile("./input.txt", ios_base::in | ios_base::out);
 ios_base::app // append mode
 ```

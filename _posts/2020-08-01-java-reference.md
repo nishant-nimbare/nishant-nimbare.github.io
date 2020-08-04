@@ -47,6 +47,56 @@ Note: Interface can hold constants but is not recommended. If a subclass impleme
 [sauce](https://www.quora.com/What-is-the-need-of-interface-in-Java)
 ,[ more sauce](https://stackoverflow.com/questions/3528420/why-do-we-need-interfaces-in-java)
 
+
+
+
+
+## Upcast / Downcast
+- Upcasting: Upcasting is the typecasting of a child object to a parent object. Upcasting can be done implicitly. Upcasting gives us the flexibility to access the parent class members but it is not possible to access all the child class members using this feature. Instead of all the members, we can access some specified members of the child class. For instance, we can access the overridden methods.
+- Downcasting: Similarly, downcasting means the typecasting of a parent object to a child object. Downcasting cannot be implicitly.
+
+downcasting is only happen when the instance actually contains a type of child ( it may have been referenced by parent variable)
+```java
+Object o = getSomeObject(),
+String s = (String) o; // this is allowed because o could reference a String
+```
+if it fails at runtime a ClassCastException is thrown
+
+[more on downcasting](https://stackoverflow.com/a/380828/12613203)
+
+
+
+## == vs Equals
+== operators for reference comparison (address comparison) and .equals() method for content comparison
+- .equals(...) will only compare what it is written to compare, no more, no less.
+- If a class does not override the equals method, then it defaults to the equals(Object o) method of the closest parent class that has overridden this method.
+- If no parent classes have provided an override, then it defaults to the method from the ultimate parent class, Object, and so you're left with the Object#equals(Object o) method. Per the Object API this is the same as ==; that is, it returns true if and only if both variables refer to the same object, if their references are one and the same. Thus you will be testing for object equality and not functional equality.
+- Always remember to override hashCode if you override equals so as not to "break the contract". As per the API, the result returned from the hashCode() method for two objects must be the same if their equals methods show that they are equivalent. The converse is not necessarily true.
+
+[sauce](https://www.geeksforgeeks.org/difference-equals-method-java/), [more sauce](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java), [more on hashcode](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)
+
+## Strings and String pool
+Strings in java are immutable. i.e changing any string actually creates a new instance of string (and then the variable points to that instance)
+
+When we declare a string, an object of type String is created in the stack, while an instance with the value of the string is created in the heap. On standard assignment of a value to a string variable, the variable is allocated stack, while the value is stored in the heap in the string constant pool
+``` java
+String str1 = "Hello";
+String str2 = "Hello";
+```
+
+![str_pool](/assets/images/str_pool.png)
+
+The ‘new’ keyword forces a new instance to always be created regardless of whether the same value was used previously or not. Using ‘new’ forces the instance to be created in the heap outside the string constant pool 
+```java
+String str1 = new String("John");
+String str2 = new String("Doe");
+```
+
+![str_new](/assets/images/str_new_alloc.png)
+
+[more](https://stackoverflow.com/a/36424446/12613203)
+
+
 ## Immutable
 Immutable class means that once an object is created, we cannot change its content. In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. We can create our own immutable class as well.
 
@@ -57,6 +107,26 @@ Following are the requirements:
 - No setters(To not have the option to change the value of the instance variable)
 
 https://dzone.com/articles/how-to-create-an-immutable-class-in-java
+
+
+## AutoBoxing / UnBoxing
+__Autoboxing__ : Converting a primitive value into an object of the corresponding wrapper class is called autoboxing.
+Applies when,
+- Passed as a parameter to a method that expects an object of the corresponding wrapper class.
+- Assigned to a variable of the corresponding wrapper class.
+
+__Unboxing__ : Converting an object of a wrapper type to its corresponding primitive value is called unboxing.
+Applies when,
+- Passed as a parameter to a method that expects a value of the corresponding primitive type.
+- Assigned to a variable of the corresponding primitive type.
+
+[great ans here](https://stackoverflow.com/a/29139595/12613203)
+
+## Exceptions
+- An __exception__ is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions.
+- Error: An Error indicates serious problem that a reasonable application should not try to catch.
+
+![exceptions](/assets/images/Exception-in-java.png)
 
 
 ## Garbage Collection
@@ -120,3 +190,5 @@ public class JavaExample{
    }
 }
 ```
+
+Note that it's entirely possible that an object never gets garbage collected (and thus finalize is never called). This can happen when the object never becomes eligible for gc (because it's reachable through the entire lifetime of the JVM) or when no garbage collection actually runs between the time the object become eligible and the time the JVM stops running (this often occurs with simple test programs) [more](https://stackoverflow.com/a/171961/12613203)
