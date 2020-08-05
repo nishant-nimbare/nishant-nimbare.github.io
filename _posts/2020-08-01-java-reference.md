@@ -109,7 +109,7 @@ String str1 = "Hello";
 String str2 = "Hello";
 ```
 
-![str_pool](/assets/images/str_pool.png)
+
 
 The ‘new’ keyword forces a new instance to always be created regardless of whether the same value was used previously or not. Using ‘new’ forces the instance to be created in the heap outside the string constant pool 
 ```java
@@ -117,7 +117,9 @@ String str1 = new String("John");
 String str2 = new String("Doe");
 ```
 
-![str_new](/assets/images/str_new_alloc.png)
+|![str_pool](/assets/images/str_pool.png) | ![str_new](/assets/images/str_new_alloc.png) |
+|:---------------------------------------:|:--------------------------------------------:|
+| direct assignment			  |  With new					 |
 
 [more](https://stackoverflow.com/a/36424446/12613203)
 
