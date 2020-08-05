@@ -51,6 +51,31 @@ Note: Interface can hold constants but is not recommended. If a subclass impleme
 
 
 
+## Static
+Static can be applied to: blocks, variables, methods, nested classes
+
+When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object
+
+A single copy of variable is created and shared among all objects at class level.
+
+If you need to do computation in order to initialize your static variables, you can declare a static block that gets executed exactly once, when the class is first loaded
+``` java
+// static variable 
+  static int a = 10; 
+  static int b; 
+    
+  // static block 
+  static { 
+      System.out.println("Static block initialized."); 
+      b = a * 4; 
+  } 
+```
+
+Methods declared as static have several restrictions:
+- They can only directly call other static methods.
+- They can only directly access static data.
+- They cannot refer to this or super in any way
+
 ## Upcast / Downcast
 - Upcasting: Upcasting is the typecasting of a child object to a parent object. Upcasting can be done implicitly. Upcasting gives us the flexibility to access the parent class members but it is not possible to access all the child class members using this feature. Instead of all the members, we can access some specified members of the child class. For instance, we can access the overridden methods.
 - Downcasting: Similarly, downcasting means the typecasting of a parent object to a child object. Downcasting cannot be implicitly.
@@ -96,6 +121,11 @@ String str2 = new String("Doe");
 
 [more](https://stackoverflow.com/a/36424446/12613203)
 
+### StringBuilder / StringBuffer
+They are mutable unlike strings
+
+StringBuffer is similar to StringBuilder except one difference that StringBuffer is thread safe, i.e., multiple threads can use it without any issue. The thread safety brings a penalty of performance.
+
 
 ## Immutable
 Immutable class means that once an object is created, we cannot change its content. In Java, all the wrapper classes (like Integer, Boolean, Byte, Short) and String class is immutable. We can create our own immutable class as well.
@@ -128,6 +158,82 @@ Applies when,
 
 ![exceptions](/assets/images/Exception-in-java.png)
 
+1. __Checked__: are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword. (for custom unchecked expection extend the Exception class.)
+
+2. __Unchecked__ : are the exceptions that are not checked at compiled time. e.g. NullPointerException, IllegalArgumentException, IllegalStateException. (for custom unchecked expection you need to extend the RuntimeException class)
+
+
+- The __Throw__ keyword in Java is used to explicitly throw an exception from a method or any block of code. We can throw either checked or unchecked exception. The throw keyword is mainly used to throw custom exceptions.
+- __Throws__ is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block.
+`type method_name(parameters) throws exception_list`
+
+ To display the message override the toString() method in custom exception.
+
+
+>When Overridding Methods, the new  method cannot throw (throws) a broader/new Exception other than the old (overridden) method apart from unchecked exceptions 
+
+
+### Assertions
+An assertion allows testing the correctness of any assumptions that have been made in the program.
+Assertion is achieved using the assert statement in Java. While executing assertion, it is believed to be true. If it fails, JVM throws an error named AssertionError. It is mainly used for testing purposes during development.
+The assert statement is used with a Boolean expression and can be written in two different ways.
+``` java
+assert expression;
+assert expression1 : expression2;
+```
+By default, assertions are disabled. We need to run the code as given.
+```
+java –ea Test
+java –enableassertions Test
+```
+Here, Test is the file name.
+
+## Threads
+Threads can be created by using two mechanisms :
+1. Extending the Thread class
+2. Implementing the Runnable Interface
+
+```java
+class MultithreadingDemo1 extends Thread { 
+	public void run() { 
+    // thread code
+	} 
+} 
+
+class MultithreadingDemo2 implements Runnable { 
+    public void run() { 
+      // thread code 
+    } 
+} 
+
+// Main Class 
+public class Multithread 
+{ 
+	public static void main(String[] args) 
+	{ 
+
+    MultithreadingDemo1 threadObject = new MultithreadingDemo1(); 
+    threadObject.start(); // starts run 
+
+    Thread runnableObject = new Thread(new MultithreadingDemo2()); 
+    runnableObject.start(); // starts run
+		 
+	} 
+} 
+
+```
+
+Thread.currentThread() gives reference to current threads 
+
+- getId()
+- getPrority()
+- setPrority (1 .... 10) [ 1 = min , 10=max ] 
+- yeild()   //give importance to other threads
+- sleep ( milliseconds, nanoseconds)
+- join ( milliseconds )             // wait for (atmost ms) this thread to end
+- isAlive() //bool
+
+[about main thread](https://www.geeksforgeeks.org/main-thread-java/)
 
 ## Garbage Collection
 When JVM starts up, it creates a heap area which is known as runtime data area. This is where all the objects (instances of class) are stored. Since this area is limited, it is required to manage this area efficiently by removing the objects that are no longer in use. The process of removing unused objects from heap memory is known as Garbage collection and this is a part of memory management in Java.
