@@ -119,6 +119,39 @@ To implement virtual functions, C++ uses a special form of late binding known as
 ## Exception
 In C++, all exceptions are unchecked, so it is not forced by the compiler to either handle or specify the exception. 
 
+
+## Threading and Fork
+
+use std::thread for multithreading
+
+``` c++
+void foo(param) 
+{ 
+	// Do something 
+} 
+
+// The parameters to the function are put after the comma 
+std::thread thread_obj(foo, params); 
+
+
+//we can also override () operator and pass 
+class fn_object_class { 
+    // Overload () operator 
+    void operator()(params) 
+    { 
+        // Do Something 
+    } 
+} 
+std::thread thread_object(fn_class_object(), params) 
+
+t1.join(); // wait for t1 to finish
+```
+
+
+fork() call is used to create a new __process__. all instructions after the call are executed in both parent and child processes.
+In parent fork() return pid of child process or -ve number if failed
+In child fork() returns zero
+ 
 ## Mutex
 
 https://stackoverflow.com/a/5154174/12613203

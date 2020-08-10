@@ -300,3 +300,47 @@ public class JavaExample{
 ```
 
 Note that it's entirely possible that an object never gets garbage collected (and thus finalize is never called). This can happen when the object never becomes eligible for gc (because it's reachable through the entire lifetime of the JVM) or when no garbage collection actually runs between the time the object become eligible and the time the JVM stops running (this often occurs with simple test programs) [more](https://stackoverflow.com/a/171961/12613203)
+
+
+## Syntax
+
+#### arrays
+``` java
+int myNum[] = {10, 20, 30, 40};
+int intArray[] = new int[20];
+myNum.length
+```
+
+#### List
+``` java
+List<Integer> l1  = new ArrayList<Integer>(); 
+
+l1.add(0, 1);       // Adds 1 at 0 index 
+l1.addAll(1, l2);   //add list l2 from 1 index   
+l1.remove(1);       // Removes element from index 1 
+.set(1, "For");  //changing elems
+.get(i)
+
+
+```
+
+#### HashMap
+```java
+Map<Integer, String> hm1 = new HashMap<>();
+hm1.put(1, "Geeks"); 
+hm1.remove(new Integer(4)); 
+
+.containsKey()
+.containsvalue()
+.clear()
+
+
+//iterating
+for (Map.Entry mapElement : hm1.entrySet()) {
+
+    int key  = (int)mapElement.getKey();  
+    String value = (String)mapElement.getValue(); 
+
+} 
+```
+
