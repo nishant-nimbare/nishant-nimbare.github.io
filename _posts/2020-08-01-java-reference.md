@@ -237,6 +237,14 @@ Thread.currentThread() gives reference to current threads
 
 [about main thread](https://www.geeksforgeeks.org/main-thread-java/)
 
+ExecutorService is used to create a thread pool and execute tasks. It uses a blocking queue internally.
+```java 
+ExecutorService service = new ExecutorService( /*number of actual threads */ 10 );
+
+service.execute( /*runnable */);
+
+```
+
 ## Garbage Collection
 When JVM starts up, it creates a heap area which is known as runtime data area. This is where all the objects (instances of class) are stored. Since this area is limited, it is required to manage this area efficiently by removing the objects that are no longer in use. The process of removing unused objects from heap memory is known as Garbage collection and this is a part of memory management in Java.
 
