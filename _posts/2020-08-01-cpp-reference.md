@@ -8,6 +8,10 @@ tags:
 ---
 
 
+- TOC
+{:toc}
+
+
 ## Inhertance
 
 ```c++
@@ -206,8 +210,8 @@ delete operator should only be used either for the pointers pointing to the memo
 
 
 ## Syntax
-input ` cin>>x;`
-output ` cout<<x;`
+input `cin>>x;`
+output `cout<<x;`
 
 ##### Arrays
 ```c++
@@ -215,6 +219,8 @@ int a[10];
 int arr[] = {1,2,3,4};  //creates arr of size 4
 int arr[6] = { 10, 20, 30, 40 };    //creates an array of size 6, initializes first 4 elements 
 ```
+
+------
 
 #### STL DataStructures
 
@@ -271,7 +277,7 @@ set <int, greater <int> > s1 // default increasing;
 .find(key)  return itr      // o(1) / o(logn)
 
 ```
-
+------
 
 #### Files
 ```c++

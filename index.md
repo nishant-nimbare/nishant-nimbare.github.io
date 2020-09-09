@@ -1,38 +1,41 @@
 ---
-title: "Portfolio"
+title: ""
 layout: single
 author_profile: true
 permalink: /
 ---
 
 [![Nishant's github stats](https://github-readme-stats.vercel.app/api?username=nishant-nimbare&count_private=true&show_icons=true&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
-
-## Experience
-
+{: style="text-align: center;"}
+<br>
 <br>
 
 
-### Claraa HealthCare , Mumbai 
+{::options parse_block_html="true" /}
+
+<div  style="text-align: center;" >
+
+# Experience
+------
+### Claraa HealthCare, Mumbai
 Backend development intern.<br>
 _Dec 2019 - jan 2020_<br>
-<br>
 
-### Coutloot , Mumbai 
+
+### Coutloot, Mumbai 
 Backend development intern.<br>
 _June - August 2019_<br>
-<br>
 
 ### Omic Healthcare, Mumbai
 App development intern, (react native).<br>
 _Feb - April 2019_<br>
-<br>
 
 ### [Unicode](https://djunicode.github.io/about/)
 Mentee,  _2018 - 19_ <br>
 Mentor,   _2019 - present_ <br>
 
+<br><br>
 
-<br><br><br>
 
 ## Certificates
 
@@ -45,6 +48,7 @@ Mentor,   _2019 - present_ <br>
 - [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , UC San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/graphs)
 
+</div>
 
 <!-- # connect with me ;) -->
 <!-- display the social media buttons in your README -->

@@ -9,6 +9,9 @@ tags:
 ---
 
 
+- TOC
+{:toc}
+
 
 
 
@@ -17,7 +20,7 @@ tags:
 SELECT * FROM Employee ORDER BY Salary DESC LIMIT 2,1
 ```
 
-##### Trigger
+#### Trigger
 A trigger is a stored procedure in database which automatically invokes whenever a special event in the database occurs. 
 ```
 create trigger [trigger_name] 

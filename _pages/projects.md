@@ -3,6 +3,10 @@ title: "Projects"
 permalink: /projects/
 ---
 
+- TOC
+{:toc}
+
+
 {% for project in site.data.projects %}
 ## [{{ project.name }}]({{ project.link }})
 - {{ project.desc }}
