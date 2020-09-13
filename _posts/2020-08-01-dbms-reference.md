@@ -40,10 +40,10 @@ for each row
 set Student.total = Student.subj1 + Student.subj2 + Student.subj3, Student.per = Student.total * 60 / 100; 
 ```
 
-print 1 to 10
-` select rownum from dual where rownum<=10;` 
-
-or ` SELECT TOP 10 ROW_NUMBER() FROM sys.objects; `
+print 1 to 10   
+`select rownum from dual where rownum<=10;` 
+or    
+`SELECT TOP 10 ROW_NUMBER() FROM sys.objects;`   
 any table with more than 10 rows will do.
 
 #### procedures
