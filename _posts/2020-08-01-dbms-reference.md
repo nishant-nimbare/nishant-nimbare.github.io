@@ -13,14 +13,61 @@ tags:
 {:toc}
 
 
+# Normalization
+Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalization in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically.
 
+1. __1NF__ : Every column/attribute should have only single value.
+
+2. __2NF__ : No partial funtional dependency
+
+3. __3NF__ : No transitive funtional dependency
+
+4. __BCNF__ : for any dependency A → B, A should be a super key i.e for a dependency A → B, A cannot be a non-prime attribute, if B is a prime attribute.
+
+
+# Indexing
+Indexing is a data structure technique to efficiently retrieve records from the database files based on some attributes on which the indexing has been done.
+
+- **Dense index** : there is an index record for every search key value in the database. This makes searching faster but requires more space to store index records itself.
+
+- **Sparse index** :  index records are not created for every search key. An index record here contains a search key and an actual pointer to the data on the disk. To search a record, we first proceed by index record and reach at the actual location of the data. If the data we are looking for is not where we directly reach by following the index, then the system starts sequential search until the desired data is found.
+
+## B+ tree
+A B+ tree is a balanced binary search tree that follows a multi-level index format. The leaf nodes of a B+ tree denote actual data pointers. B+ tree ensures that all leaf nodes remain at the same height, thus balanced. Additionally, the leaf nodes are linked using a link list; therefore, a B+ tree can support random access as well as sequential access
+
+
+[sauce](https://www.tutorialspoint.com/dbms/dbms_indexing.htm#:~:text=Indexing%20is%20a%20data%20structure,based%20on%20its%20indexing%20attributes.)
+
+
+# CAP theorem
+
+[a great explaination](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
+
+CAP Theorem is a concept that a distributed database system can only have 2 of the 3: Consistency, Availability and Partition Tolerance
+
+# SQL vs NoSQL
+
+| **SQL**           | **NoSql**           |
+| :-----------  | -------------:|
+| Relational db, structured data | Schemaless, un/semi - structured data|
+| stored in tables      | can be document-oriented, column-oriented, graph-based or organized as a KeyValue store|  
+| Vertically Scalable | Horizontally Scalable      |    
+| strong query language | querying tools not as sophisticated as sql|
+| support Acid			| Acid support varies amongst different implementations |
+| Join 2 or more tables | relations are not stored in different tables, hence join is not required as such. ( mongoose populate actually does 2 trips to db server hence has a overhead) |
+| inter nodes joins are very slow on shared db, Joins also become slow on huge tables | - | 
+| consistency over availabilty & partition tolerance | C,A,P can be traded according to needs |
+
+
+# SQL
 
 3rd highest salary
 ```
 SELECT * FROM Employee ORDER BY Salary DESC LIMIT 2,1
 ```
 
-#### Trigger
+
+## Trigger
 A trigger is a stored procedure in database which automatically invokes whenever a special event in the database occurs. 
 ```
 create trigger [trigger_name] 
@@ -46,7 +93,7 @@ or
 `SELECT TOP 10 ROW_NUMBER() FROM sys.objects;`   
 any table with more than 10 rows will do.
 
-#### procedures
+## procedures
 
 ```
 delimiter //
