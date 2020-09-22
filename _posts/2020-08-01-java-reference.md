@@ -178,6 +178,43 @@ Applies when,
 >When Overridding Methods, the new  method cannot throw (throws) a broader/new Exception other than the old (overridden) method apart from unchecked exceptions 
 
 
+```
+try
+{
+  // statements, some of which might
+  // throw an exception
+}
+
+catch ( SomeExceptionType ex )
+{
+  // statements to handle this
+  // type of exception
+}
+
+
+....  // more catch blocks
+
+catch ( AnotherExceptionType ex )
+{
+  // statements to handle this
+  // type of exception
+}
+
+finally
+{
+  // statements which will execute no matter
+  // how the try block was exited.
+}
+
+// Statements following the structure
+
+```
+
+- There can only be one finally block, and it must follow the catch blocks.
+- If the try block exits normally (no exceptions occurred), then control goes directly to the finally block. After the finally block is executed, the statements following it get control.
+- If the try block exits because of an Exception which is handled by a catch block, first that block executes and then control goes to the finally block. After the finally block is executed the statements following it get control.
+- If the try block exits because of an Exception which is NOT handled by a catch block control goes directly to the finally block. After the finally block is executed the Exception is thrown to the caller and control returns to the caller.
+
 ### Assertions
 An assertion allows testing the correctness of any assumptions that have been made in the program.
 Assertion is achieved using the assert statement in Java. While executing assertion, it is believed to be true. If it fails, JVM throws an error named AssertionError. It is mainly used for testing purposes during development.
@@ -354,4 +391,3 @@ for (Map.Entry mapElement : hm1.entrySet()) {
 
 } 
 ```
-
