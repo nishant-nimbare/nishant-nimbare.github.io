@@ -163,7 +163,7 @@ Applies when,
 
 ![exceptions](/assets/images/Exception-in-java.png)
 
-1. __Checked__: are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword. (for custom unchecked expection extend the Exception class.)
+1. __Checked__: are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword. (for custom checked expection extend the Exception class.)
 
 2. __Unchecked__ : are the exceptions that are not checked at compiled time. e.g. NullPointerException, IllegalArgumentException, IllegalStateException. (for custom unchecked expection you need to extend the RuntimeException class)
 

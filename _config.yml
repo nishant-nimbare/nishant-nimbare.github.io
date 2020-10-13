@@ -16,7 +16,7 @@
 title: Nishant Nimbare
 email: nishantnimbare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am currently in my final year pursuing a major in Computer Engineering at D.J.S College of Engineering.
+  I am currently in my final year pursuing a major in Computer Engineering at DJSCE.
 twitter_username: imNeo47
 github_username: nishant-nimbare
 minimal_mistakes_skin: dark
@@ -65,7 +65,7 @@ analytics:
 author:
   name   : "Nishant Nimbare"
   avatar : "/assets/images/panda.jpeg"
-  bio    : "I am currently in my final year pursuing a major in Computer Engineering at D.J.S College of Engineering."
+  bio    : "I am currently in my final year pursuing a major in Computer Engineering at DJSCE."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
