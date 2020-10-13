@@ -349,6 +349,12 @@ public class JavaExample{
 
 Note that it's entirely possible that an object never gets garbage collected (and thus finalize is never called). This can happen when the object never becomes eligible for gc (because it's reachable through the entire lifetime of the JVM) or when no garbage collection actually runs between the time the object become eligible and the time the JVM stops running (this often occurs with simple test programs) [more](https://stackoverflow.com/a/171961/12613203)
 
+## JVM, JRE,  JDK
+
+- JVM :  Java Virtual Machine (JVM) is a engine that provides runtime environment to drive the Java Code or applications. It converts Java bytecode into machines language. :- verifies bytescode, executes line by line(JIT).
+- JRE : [ JVM + libararies needed for running java code]
+- JDK : [ JRE + dev tools like (compiler - javac, archiver - jar, documentation generator - javaDoc, debugger)]
+
 
 ## Syntax
 

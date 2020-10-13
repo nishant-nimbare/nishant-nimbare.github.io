@@ -55,7 +55,7 @@ CAP Theorem is a concept that a distributed database system can only have 2 of t
 | strong query language | querying tools not as sophisticated as sql|
 | support Acid			| Acid support varies amongst different implementations |
 | Join 2 or more tables | relations are not stored in different tables, hence join is not required as such. ( mongoose populate actually does 2 trips to db server hence has a overhead) |
-| inter nodes joins are very slow on shared db, Joins also become slow on huge tables | - | 
+| inter nodes joins are very slow on sharded db, Joins also become slow on huge tables | - | 
 | consistency over availabilty & partition tolerance | C,A,P can be traded according to needs |
 
 
