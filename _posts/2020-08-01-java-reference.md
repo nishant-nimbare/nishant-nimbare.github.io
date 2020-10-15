@@ -213,7 +213,7 @@ finally
 - There can only be one finally block, and it must follow the catch blocks.
 - If the try block exits normally (no exceptions occurred), then control goes directly to the finally block. After the finally block is executed, the statements following it get control.
 - If the try block exits because of an Exception which is handled by a catch block, first that block executes and then control goes to the finally block. After the finally block is executed the statements following it get control.
-- If the try block exits because of an Exception which is NOT handled by a catch block control goes directly to the finally block. After the finally block is executed the Exception is thrown to the caller and control returns to the caller.
+- If the try block exits because of an Exception which is __NOT__ handled by a catch block control goes directly to the finally block. After the finally block is executed the Exception is thrown to the caller and control returns to the caller.
 
 ### Assertions
 An assertion allows testing the correctness of any assumptions that have been made in the program.
@@ -397,3 +397,27 @@ for (Map.Entry mapElement : hm1.entrySet()) {
 
 } 
 ```
+
+#### HashSet
+```java
+
+HashSet<String> set=new HashSet<String>();  
+set.add("Ravi");  
+set.remove("Ravi");
+set.addAll(set1);
+set.removeAll(set1);
+set.clear();
+
+for (String i : set)  
+  System.out.println(i);
+
+
+// using iterator
+Iterator<String> i = h.iterator(); 
+while (i.hasNext()) 
+    System.out.println(i.next()); 
+
+```
+HashSet uses HashMap internally.
+HashMap is said to be a bit faster don't know why.
+Both are not synchronized.
