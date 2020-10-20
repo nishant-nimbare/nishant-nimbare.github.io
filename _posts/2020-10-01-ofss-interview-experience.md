@@ -33,7 +33,7 @@ some linux commands (he saw that I was using linux while screen-sharing)
 - remove all files created before a certain date.
 
 
-## Round 3: Managerial
+## Round 2: Managerial
 > note : i dont remember much about this interview
 
 

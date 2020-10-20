@@ -12,6 +12,21 @@ tags:
 - TOC
 {:toc}
 
+# Cardinality
+cardinality refers to the relationship between two tables. Relationship can be of four types : 1 to 1, 1 to many, many to 1 , many to many.
+
+# ACID
+A transaction is a single logical unit of work which accesses and possibly modifies the contents of a database. Transactions access data using read and write operations.
+In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties.
+
+1. Atomicity : either the entire transaction takes place at once or doesn’t happen at all. There is no midway i.e. transactions do not occur partially
+
+2. Consistency : This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. It refers to the correctness of a database. e.g,The total amount before and after the transaction must be maintained.
+
+3. Isolation : multiple transactions can occur concurrently. Transactions occur independently without interference
+
+4. Durability : This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. These updates now become permanent and are stored in non-volatile memory. The effects of the transaction, thus, are never lost.
+
 
 # Normalization
 Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalization in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically.
@@ -45,6 +60,9 @@ A B+ tree is a balanced binary search tree that follows a multi-level index form
 
 CAP Theorem is a concept that a distributed database system can only have 2 of the 3: Consistency, Availability and Partition Tolerance
 
+![cap-theorem-triangle](/assets/images/cap-theorem-triangle.png)
+
+
 # SQL vs NoSQL
 
 | **SQL**           | **NoSql**           |
@@ -74,6 +92,25 @@ ORDER BY city, first_name;
 ```
 It sorts the customer list by the city first and then by the first name.
 
+duplicate table with data : `CREATE TABLE foo SELECT * FROM bar`
+
+duplicate table without data : `CREATE TABLE foo SELECT * FROM bar Limit 0` or `CREATE TABLE foo SELECT * FROM bar where 1=0` 
+
+
+## types of commands
+
+- Data Definition Language : create, drop, truncate, alter, rename
+
+- Data Query Language : Select
+
+- Data Manipulation Language : insert, update, delete
+
+- Data Control Language : grant revoke
+
+- Transaction Control Language : commit, rollback, savepoint, set transaction
+
+
+> truncate can't be rolled back. we can rollback delete
 
 ## Group by
 
@@ -180,3 +217,15 @@ CALL LoopDemo();
 ```
 
 cursors :  https://www.mysqltutorial.org/mysql-cursor/
+
+
+### Procedures Vs Functions
+
+| Functions  | Procedures |
+| :-------- | --------: |
+|A function has a return type and returns a value. 	|	A procedure does not have a return type. But it returns values using the OUT parameters.|
+|You cannot use a function with Data Manipulation queries. Only Select queries are allowed in functions.	|	You can use DML queries such as insert, update, select etc… with procedures.|
+|A function does not allow output parameters		|	A procedure allows both input and output parameters.|
+|You cannot manage transactions inside a function.	|	You can manage transactions inside a function.|
+|You cannot call stored procedures from a function	| 	You can call a function from a stored procedure.|
+|You can call a function using a select statement.	| 	You cannot call a procedure using select statements.|
