@@ -1,0 +1,31 @@
+[
+    {
+        "company" : "Claraa HealthCare",
+        "location" : "Mumbai",
+        "role": "Backend development intern",
+        "from": "Dec 2019",
+        "to": "Jan 2020"
+    },
+    {
+        "company" : "Coutloot",
+        "location" : "Mumbai",
+        "role": "Backend development intern",
+        "from": "June 2019",
+        "to": "August 2019"
+    },
+    {
+        "company" : "Omic Healthcare",
+        "location" : "Mumbai",
+        "role": "App development intern, (react native).",
+        "from": "Feb 2019",
+        "to": "March 2019"
+    },
+    {
+        "company" : "DjUnicode",
+        "link" : "https://djunicode.github.io/about/",
+        "location" : "Mumbai",
+        "role": "Mentor/Mentee",
+        "from": "2018",
+        "to": "present"
+    }
+]

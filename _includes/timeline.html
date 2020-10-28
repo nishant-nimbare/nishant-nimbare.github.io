@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/timeline.css">
+
+<div class="timeline" >
+
+    {% for item in site.data.experience %}
+    
+
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod == 0 %}
+        <!-- even -->
+        <div class="container left">
+    {% else %}
+        <!-- odd -->
+        <div class="container right">
+    {% endif %}
+
+
+        <div class="content">
+            <span style="font-weight: bold;  font-size: large;">{{ item.company }} , {{ item.location }} </span> <br>     
+            <span style="font-style: italic"> {{ item.from }} - {{ item.to }} </span>
+			<p>{{ item.role }}</p>
+
+		</div>
+    
+    </div>
+
+
+    {% endfor %}
+    
+
+</div>

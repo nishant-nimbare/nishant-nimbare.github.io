@@ -10,31 +10,9 @@ permalink: /
 <br>
 <br>
 
-
-{::options parse_block_html="true" /}
-
-<div  style="text-align: center;" >
-
 # Experience
-------
-### Claraa HealthCare, Mumbai
-Backend development intern.<br>
-_Dec 2019 - jan 2020_<br>
 
-
-### Coutloot, Mumbai 
-Backend development intern.<br>
-_June - August 2019_<br>
-
-### Omic Healthcare, Mumbai
-App development intern, (react native).<br>
-_Feb - April 2019_<br>
-
-### [Unicode](https://djunicode.github.io/about/)
-Mentee,  _2018 - 19_ <br>
-Mentor,   _2019 - present_ <br>
-
-<br><br>
+{% include timeline.html %}
 
 
 ## Certificates
@@ -48,7 +26,6 @@ Mentor,   _2019 - present_ <br>
 - [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , UC San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/graphs)
 
-</div>
 
 <!-- # connect with me ;) -->
 <!-- display the social media buttons in your README -->
