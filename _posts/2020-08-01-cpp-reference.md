@@ -58,7 +58,7 @@ class D : private A // 'private' is default for classes
 
 ### virtual
 Runtime polymorphism
-```
+```cpp
 class Base{
     public : 
         virtual void show(){ cout<<"base"; }
@@ -76,7 +76,7 @@ int main(){
 
 ```
 
-```
+```cpp
 class base1
 {
   public:
@@ -107,6 +107,11 @@ There are 2 ways to avoid ambiguity:
 1. Use scope resolution operator     // multiple inhertance
 2. Use virtual base class            // multipath inhertance
 
+The diamond problem occurs when two superclasses of a class have a common base class. here the constructor and destructor will be called twice. So object ‘grandchild’ has two copies of all members of 'grandParent’, this causes ambiguities. solved with virtual base class
+
+```cpp
+class Faculty : virtual public Person { ...
+```
 
 - [The Virtual table / vtable](https://www.learncpp.com/cpp-tutorial/125-the-virtual-table/) :
 
@@ -123,6 +128,19 @@ To implement virtual functions, C++ uses a special form of late binding known as
 ## Exception
 In C++, all exceptions are unchecked, so it is not forced by the compiler to either handle or specify the exception. 
 
+
+## Pointers
+
+Pointer is a variable in C++ that holds the address of another variable. They have data type just like variables, for example an integer type pointer can hold the address of an integer variable and an character type pointer can hold the address of char variable.
+
+The size of a pointer in C/C++ is not fixed. It depends upon different issues like Operating system, CPU architecture etc. Usually it depends upon the word size of underlying processor for example for a 32 bit computer the pointer size can be 4 bytes for a 64 bit computer the pointer size can be 8 bytes
+
+### smart pointers
+
+smart pointers are wrapper classes of pointers used to automatically delete pointers when variable goes out of scope. we can create our own smart pointer class by overloading * and -> operator and deleting the pointer in destructor of the class (which is automatically called when object goes of out scope).
+impemented by std::unique_ptr 
+
+[ sauce ](https://www.geeksforgeeks.org/smart-pointers-cpp/)
 
 ## Threading and Fork
 

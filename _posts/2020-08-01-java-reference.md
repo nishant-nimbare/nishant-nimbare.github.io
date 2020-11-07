@@ -51,7 +51,8 @@ Note: Interface can hold constants but is not recommended. If a subclass impleme
 ,[ more sauce](https://stackoverflow.com/questions/3528420/why-do-we-need-interfaces-in-java)
 
 
-
+### Abstract Class vs Interface
+![abstract Class vs Interface](/assets/images/abstractVsinterface.png)
 
 
 ## Static
