@@ -46,7 +46,7 @@ but i would also say that the interviewer  was best one i had till date.
 
 start off by questions about internship project, tech stack used, some specific technologies used ( tokens, cors, etc)
 
-why mongoDB, bottlenecks of using mongo
+why mongoDB, bottlenecks of using mongo, what primary key and why?
 
 why node, async programming, node event loop.
 
