@@ -34,3 +34,31 @@ During onCampus interviews, we had a dynamic programming question.
 3. function overloading vs overriding
 
 4. ACID and left join
+
+
+# Sponser Round 
+
+I don't know what sponsor round means, but it is the final round of hiring process.
+I asked my friend who already had the offer from ACH but they didn't have this.
+
+I would consider this most diffiult interview i have given till date.
+but i would also say that the interviewer  was best one i had till date.
+
+start off by questions about internship project, tech stack used, some specific technologies used ( tokens, cors, etc)
+
+why mongoDB, bottlenecks of using mongo
+
+why node, async programming, node event loop.
+
+design question on above project
+
+some more high lvl design questions, design patterns, cohesion coupling. 
+
+the whole interview was based on thinking process and design concepts.
+
+No syntax lvl or DSA questions
+
+
+
+ps:i was grinding through dp and graph questions the day before for preparation.
+
