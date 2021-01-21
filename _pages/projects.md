@@ -3,6 +3,12 @@ title: "Projects"
 permalink: /projects/
 ---
 
+
+<!-- {::options parse_block_html="true" /} -->
+
+{% include projects.html %}
+
+<!-- 
 - TOC
 {:toc}
 
@@ -13,4 +19,4 @@ permalink: /projects/
 - Stack : {{ project.stack }}
 {% if project.result And project.result != "" And project.result != nil %} 
 - {{ project.result }} {% endif %}
-{% endfor %}
+{% endfor %} -->
