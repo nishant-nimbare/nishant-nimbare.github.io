@@ -1,0 +1,23 @@
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/projects.css">
+
+
+<a href="{{ repository.html_url }}" class="github-card">
+  <h3>{{ repository.name }}</h3>
+  <p>{{ repository.description }}</p>
+  <span class="github-card__meta">
+    <span class="github-card__language-icon" style="color: black;">●</span> {{ repository.language }}
+  </span>
+  <span class="github-card__meta">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <span data-stars>
+      {{ repository.stargazers_count }}
+    </span>
+  </span>
+  <span class="github-card__meta">
+    <i class="fas fa-code-branch"></i>
+    <span data-forks>
+      {{ repository.forks_count }}
+    </span>
+  </span>
+</a>
