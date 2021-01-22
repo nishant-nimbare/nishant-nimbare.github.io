@@ -6,6 +6,11 @@ permalink: /projects/
 
 <!-- {::options parse_block_html="true" /} -->
 
+[![Nishant's github stats](https://github-readme-stats.vercel.app/api?username=nishant-nimbare&count_private=true&show_icons=true&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
+{: style="text-align: center;"}
+
+<br>
+
 {% include projects.html %}
 
 <!-- 

@@ -5,15 +5,35 @@ author_profile: false
 permalink: /
 ---
 
-[![Nishant's github stats](https://github-readme-stats.vercel.app/api?username=nishant-nimbare&count_private=true&show_icons=true&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
-{: style="text-align: center;"}
-<br>
-<br>
+| :-----------  | -------------: |
+| ![profile photo](/assets/images/panda.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently in my final year pursuing Computer Engineering at DJSCE, Mumbai. <br/><br/> "A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ |
+{: style="font-size: large;"}
+<br/>
+<br/>
+
+
+# Education
+------
+
+| :-----------  | -------------: |
+| **Dwarkadas J. Sanghvi** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br/> 2017 - 2021                |  __Bachelor of Engineering__, <br/>  Computer Engineering,<br/> _9.09 cgpa_|
+| **Vidyanidhi Jr college** <br/> 2015 - 2017                | __Higher Secondary__, <br/>  HSC - Science, <br/> _86 %_|
+| **M.B. High School**  <br/> 2005 - 2015 | __Secondary__, <br/>  SSC <br/> _93.8 %_|
+{: style="font-size: large;"}
+<br/>
+<br/>
 
 # Experience
-
+------
 {% include timeline.html %}
 
+<br>
+<br>
+
+# Skills
+------
+- _Languages_ : C++, Java, JavaScript, C, SQL
+- _Technologies_ : Nodejs, Android, ReactNative, MongoDB, HTML, CSS, Git, Docker.
 
 ## Certificates
 

@@ -68,7 +68,7 @@ analytics:
 author:
   name   : "Nishant Nimbare"
   avatar : "/assets/images/panda.jpeg"
-  bio    : "I am currently in my final year pursuing a major in Computer Engineering at DJSCE."
+  bio    : "I am currently in my final year pursuing Computer Engineering at DJSCE."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
