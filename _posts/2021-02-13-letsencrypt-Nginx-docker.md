@@ -15,7 +15,7 @@ For the uninitiated, below is taken from their [website](https://certbot.eff.org
 
 So basically certbot is a cli-tool that talk to LetsEncrypt to issue and renew ssl certificate[s].
 
-## Dissecting the Bot
+# Dissecting the Bot
 There are 2 things at play here, Certbot (client) and LetsEncrypt . Long story short, to get a ssl certificate certbot needs to prove LetsEncrypt that the claimed domain does actually belongs to us, i.e. the server that is resolved/reached by that domain is indeed ours. To prove this, LetsEncrypt gives us a challenge .
 There are 2 types of challenges:
 - Provisioning a DNS record under
@@ -27,7 +27,7 @@ Consider it like this, LetsEncrypt tell the client to create a HTTP resource (re
 
 Read more about this [in the offical documentation](https://letsencrypt.org/how-it-works/).
 
-## Ways to get a certificate
+# Ways to get a certificate
 There are 3 ways which are important for us to understand.
 
 1. nginx plugin: the simplest of them all. certbot manages all the stuff here, right from fulfilling challenges & getting the certs to modifying the nginx-config for https and even automatic renewal. 
@@ -38,7 +38,7 @@ There are 3 ways which are important for us to understand.
 
 One thing to remember here is that, whichever method you choose the default renewal process will follow the same method. 
 
-## Infinite elixir - Renewal
+# Infinite elixir - Renewal
 
 LetsEncrypt ssl certificates are valid for 90 days, after that we need to renew them or get new onces. `certbot renew`
 
@@ -50,23 +50,23 @@ we can also have different method for initially getting certs and while renewal,
 
 But here's the catch, the default certbot timer initiates a normal default certbot renew which will follow the same method used for getting certs. Now you can technically also change that but that is not easy nor recommended. Better would be to create a cron job with your custom renew command.
 
-sauce : https://certbot.eff.org/docs/using.html
+sauce : [https://certbot.eff.org/docs/using.html](https://certbot.eff.org/docs/using.html)
 
 ----------------
 
 So all of this is great but how do we get it to work with docker.
 Below are 3 ways, which I found after intense searching (_\*cough\*... one google search ...\*cough\*_). 
 
-### 1 Certbot in a independent container
+# 1 Certbot in a independent container
 
-source : https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
+source : [https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)
 
 I 100% recommend to read the original article as it explains everything in detail. To give you a gist, you run certbot in a independent container, with 2 common shared volumes between them, one for storing the certs and another for http resource of challenge. Didn't try this one but it looks like it works on the webroot method. There's just one catch, which the author explains under `The Chicken or the Egg?`, basically nginx won't start without ssl certs and certbot won't get certs without nginx - since we are using webroot, so you will need to run a script that does this ....
 > Create a dummy certificate, start nginx, delete the dummy and request the real certificates.
 
-### 2 Certbot in the same container as Nginx
+# 2 Certbot in the same container as Nginx
 
-source : https://medium.com/@vshab/nginx-with-lets-encrypt-in-docker-container-e549d18c00d7
+source : [https://medium.com/@vshab/nginx-with-lets-encrypt-in-docker-container-e549d18c00d7](https://medium.com/@vshab/nginx-with-lets-encrypt-in-docker-container-e549d18c00d7)
 
 Easier than the previous one in my opinion. Here, the author installs & runs certbot in same container as Nginx. But don't forget to attach a bind-mount or volume to `/etc/letsencrypt` so that the certificate persist even after container is removed, though it will work even without that. To avoid the chicken & egg problem mentioned above, the author here uses an entrypoint script to get the certificates in standalone mode before nginx starts, thus by the time nginx is running the ssl certs will be in place and nginx won't complain. 
 
@@ -74,7 +74,7 @@ Since the renewal method is different from the initial one you'll need a cron jo
 
 I may be wrong, but I think one could also do this with certbot nginx plugin and let certbot handle everything, might work. Try this out and also tell me if it does indeed work 
 
-### 3 Certbot on host machine
+# 3 Certbot on host machine
 
 This is kind of hacky, but this is what I ended up doing. 
 Simplest of them all, install certbot on the docker host and bind-mount 2 directories
