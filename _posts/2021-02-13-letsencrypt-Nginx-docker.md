@@ -120,3 +120,6 @@ Why I used this :
 1. The certificates are independent of containers which means I can bring up and down the containers any number of times without requesting for new certs everytime & without worrying about [LetsEncrypt rate limits](https://letsencrypt.org/docs/rate-limits/).
 
 2. Don't have to write custom cron job as the default certbot.timer will be enough.
+
+
+## [Checkout the sample nginx conf for the above method](https://gist.github.com/nishant-nimbare/812e2a5c408b19f03f8318ac757fa1fd)
