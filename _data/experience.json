@@ -1,4 +1,11 @@
 [
+{
+        "company" : "Argonaut",
+        "location" : "Remote",
+        "role": "Software development intern",
+        "from": "Feb 2020",
+        "to": "March 2020"
+    },
     {
         "company" : "Claraa HealthCare",
         "location" : "Mumbai",
