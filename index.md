@@ -32,7 +32,7 @@ permalink: /
 
 # Skills
 ------
-- _Languages_ : C++, Java, JavaScript, C, SQL
+- _Languages_ : C++, Java, JavaScript, GoLang, C, SQL
 - _Technologies_ : Nodejs, Android, ReactNative, MongoDB, HTML, CSS, Git, Docker.
 
 ## Certificates
