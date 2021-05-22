@@ -96,6 +96,42 @@ duplicate table with data : `CREATE TABLE foo SELECT * FROM bar`
 
 duplicate table without data : `CREATE TABLE foo SELECT * FROM bar Limit 0` or `CREATE TABLE foo SELECT * FROM bar where 1=0` 
 
+Distinct : `SELECT COUNT(DISTINCT Country) FROM Customers;`
+
+find duplicate records:
+```sql
+SELECT OrderID, ProductID, COUNT(*)
+FROM OrderDetails
+GROUP BY OrderID, ProductID
+HAVING COUNT(*)>1 
+```
+
+delete duplicates : (Self join)
+```sql
+
+DELETE FROM contacts where contacts.id in(
+  SELECT id as duplicates from(
+
+	SELECT DISTINCT t2.id FROM contacts as t1  
+	JOIN contacts as t2   
+	WHERE  
+		t1.id < t2.id AND  
+		t1.email = t2.email
+	) as dup
+);
+
+
+###### OR ###########
+
+Delete t2 FROM contacts as t1  
+JOIN contacts as t2   
+WHERE  
+    t1.id < t2.id AND  
+    t1.email = t2.email;
+
+
+```
+
 
 ## types of commands
 

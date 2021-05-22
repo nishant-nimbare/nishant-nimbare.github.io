@@ -23,7 +23,7 @@ There are 2 types of challenges:
 
 We need to fulfill any one of them. Let see Provisioning an HTTP resource in detail....
 
-Consider it like this, LetsEncrypt tell the client to create a HTTP resource (read file), that should be reachable under a well-known  path. LetsEncrypt then tries to get this resource through public internet, if it's found voila. This actually is not entirely correct, there are some finer details about signatures, nonce, etc. But this basic understanding should work for now.
+Consider it like this, LetsEncrypt tells the client to create a HTTP resource (read file), that should be reachable under a well-known  path. LetsEncrypt then tries to get this resource through public internet, if it's found voila. This actually is not entirely correct, there are some finer details about signatures, nonce, etc. But this basic understanding should work for now.
 
 Read more about this [in the offical documentation](https://letsencrypt.org/how-it-works/).
 

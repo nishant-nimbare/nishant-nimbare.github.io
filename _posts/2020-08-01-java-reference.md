@@ -104,6 +104,33 @@ if it fails at runtime a ClassCastException is thrown
 
 [sauce](https://www.geeksforgeeks.org/difference-equals-method-java/), [more sauce](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java), [more on hashcode](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)
 
+*String Equals Implementation*:-
+
+```java
+public boolean equals(Object anObject) {
+          if (this == anObject) {
+              return true;
+          }
+          if (anObject instanceof String) {
+              String anotherString = (String)anObject;
+              int n = count;
+              if (n == anotherString.count) {
+                  char v1[] = value;
+                  char v2[] = anotherString.value;
+                  int i = offset;
+                  int j = anotherString.offset;
+                  while (n-- != 0) {
+                      if (v1[i++] != v2[j++])
+                          return false;
+                  }
+                  return true;
+              }
+          }
+          return false;
+      }
+```
+
+
 ## Strings and String pool
 Strings in java are immutable. i.e changing any string actually creates a new instance of string (and then the variable points to that instance)
 
