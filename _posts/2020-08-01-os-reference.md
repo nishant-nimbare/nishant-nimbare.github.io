@@ -68,7 +68,12 @@ Semaphore is a signalling mechanism and a thread that is waiting on a semaphore 
 
 A Mutex is different than a semaphore as it is a locking mechanism while a semaphore is a signalling mechanism. A binary semaphore can be used as a Mutex but a Mutex can never be used as a semaphore.
 
+Mutex has a concept of ownership - only the thread that acquires a lock can unlock it.
+while seamaphore suffers from problem of "release without acquire" - this can happen due to faulty code.
 
+also with semaphore, a thread my signal aquire while it is already in critical section - recursive lock. which may result in deadlock as thread would wait for itself to relase. 
+
+[detailed video](https://www.youtube.com/watch?v=TDzQixSl73M)
 
 # Linux cmds
 

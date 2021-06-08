@@ -1,3 +1,11 @@
+---
+title: "Accolite Interview Experience"
+last_modified_at: 2021-06-08T11:00:00
+categories:
+  - Interview Experience
+tags:
+  - Interview
+---
 
 Got to interview through accolite hiring contest drive.
 
@@ -39,9 +47,9 @@ During onCampus interviews, we had a dynamic programming question.
 # Sponser Round 
 
 I don't know what sponsor round means, but it is the final round of hiring process.
-I asked my friend who already had the offer from ACH but they didn't have this.
+I asked my friends who already had the offer from ACH but they didn't have this.
 
-I would consider this most diffiult interview i have given till date.
+I would consider this ~~most diffiult~~ 2nd most difficult interview i have given till date.
 but i would also say that the interviewer  was best one i had till date.
 
 start off by questions about internship project, tech stack used, some specific technologies used ( tokens, cors, etc)
