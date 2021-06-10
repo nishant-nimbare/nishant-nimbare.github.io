@@ -8,9 +8,6 @@ tags:
 toc: true
 ---
 
-- TOC
-{:toc}
-
 ## Encapsulation
 In normal terms Encapsulation is defined as wrapping up of data and information under a single unit. In Object Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulates them.
 
@@ -344,7 +341,7 @@ the instance (object) pointed by (referenced by) obj2 is not reachable
 _you can request to JVM for garbage collection by calling System.gc() method_
 
 
-#### finalize Method
+### finalize Method
 
 It is a method that the Garbage Collector always calls just before the deletion/destroying the object which is eligible for Garbage Collection, so as to perform clean-up activity. Clean-up activity means closing the resources associated with that object like Database Connection, Network Connection or we can say resource de-allocation
 
@@ -387,14 +384,14 @@ Note that it's entirely possible that an object never gets garbage collected (an
 
 ## Syntax
 
-#### arrays
+### arrays
 ``` java
 int myNum[] = {10, 20, 30, 40};
 int intArray[] = new int[20];
 myNum.length
 ```
 
-#### List
+### List
 ``` java
 List<Integer> l1  = new ArrayList<Integer>(); 
 
@@ -407,7 +404,7 @@ l1.remove(1);       // Removes element from index 1
 
 ```
 
-#### HashMap
+### HashMap
 ```java
 Map<Integer, String> hm1 = new HashMap<>();
 hm1.put(1, "Geeks"); 
@@ -427,7 +424,7 @@ for (Map.Entry mapElement : hm1.entrySet()) {
 } 
 ```
 
-#### HashSet
+### HashSet
 ```java
 
 HashSet<String> set=new HashSet<String>();  
