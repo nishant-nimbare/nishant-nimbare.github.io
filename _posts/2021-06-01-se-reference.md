@@ -11,7 +11,7 @@ toc_sticky: true
 ---
 
 
-### Cohesion
+## Cohesion
 Signifies the togetherness of components of module. high cohesion is good, it makes modules reusable and readable.
 
 _**low cohesion**_
@@ -39,7 +39,7 @@ class display{
 ```
 
 
-### Coupling
+## Coupling
 Signifies dependency of module on other modules. Low coupling is good. 
 
 https://www.youtube.com/watch?v=-XJk27254KA
