@@ -1,12 +1,20 @@
 ---
 title: ""
-layout: single
+# layout: single
+layout: splash
 author_profile: false
 permalink: /
+
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: '"A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ '
 ---
 
 | :-----------  | -------------: |
-| ![profile photo](/assets/images/me.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently in my final year pursuing Computer Engineering at DJSCE, Mumbai. <br/><br/> "A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ |
+| ![profile photo](/assets/images/me.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently in my final year pursuing Computer Engineering at DJSCE, Mumbai. <br/><br/> |
 {: style="font-size: large;"}
 <br/>
 <br/>
