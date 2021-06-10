@@ -1,15 +1,17 @@
 ---
-title: ""
-layout: single
-author_profile: false
+title: "Hi, Nishant here."
+layout: splash
 permalink: /
----
 
-| :-----------  | -------------: |
-| ![profile photo](/assets/images/me.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently in my final year pursuing Computer Engineering at DJSCE, Mumbai. <br/><br/> "A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ |
-{: style="font-size: large;"}
-<br/>
-<br/>
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: 'I am currently in my final year pursuing Computer Engineering at DJSCE, Mumbai.'
+intro: 
+  - excerpt: '"A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ '
+---
 
 
 # Education
@@ -46,26 +48,3 @@ permalink: /
 - [Graphs](https://drive.google.com/file/d/1GZFWxSNQMVMXAQL0sXR01W0V6p3wSOME/view?usp=sharing) , UC San Diego on coursera.
   <br> [_My submissions_](https://github.com/nishant-nimbare/cp/tree/master/course/graphs)
 
-
-<!-- # connect with me ;) -->
-<!-- display the social media buttons in your README -->
-<!-- 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
-
-
-[1.1]: https://img.icons8.com/carbon-copy/24/000000/email.png
-[2.1]: https://img.icons8.com/material-outlined/24/000000/github.png
-[3.1]: https://img.icons8.com/wired/24/000000/chef-hat.png
-[4.1]: https://img.icons8.com/android/24/000000/linkedin.png
-[5.1]: https://img.icons8.com/ios-filled/24/000000/gitlab.png
-
-[1]: mailto:nishantnimbare@gmail.com
-[2]: http://www.github.com/nishant-nimbare
-[3]: https://www.codechef.com/users/nishantnimbare
-[4]: https://www.linkedin.com/in/nishant-nimbare/
-[5]: https://gitlab.com/nishant-nimbare
- -->
