@@ -17,7 +17,7 @@ title: Nishant Nimbare
 email: nishantnimbare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am currently in my final year pursuing a major in Computer Engineering at DJSCE.
-twitter_username: imNeo47
+twitter_username: nishantnimbare
 github_username: nishant-nimbare
 minimal_mistakes_skin: dark
 search: true
@@ -114,9 +114,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -124,6 +124,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      
 
 category_archive:
   type: liquid
