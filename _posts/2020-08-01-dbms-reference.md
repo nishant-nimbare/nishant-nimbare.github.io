@@ -6,16 +6,18 @@ tags:
   - Reference
   - sql
   - dbms
+toc: true
+toc_sticky: true
 ---
 
 
 - TOC
 {:toc}
 
-# Cardinality
+## Cardinality
 cardinality refers to the relationship between two tables. Relationship can be of four types : 1 to 1, 1 to many, many to 1 , many to many.
 
-# ACID
+## ACID
 A transaction is a single logical unit of work which accesses and possibly modifies the contents of a database. Transactions access data using read and write operations.
 In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties.
 
@@ -28,7 +30,7 @@ In order to maintain consistency in a database, before and after the transaction
 4. Durability : This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. These updates now become permanent and are stored in non-volatile memory. The effects of the transaction, thus, are never lost.
 
 
-# Normalization
+## Normalization
 Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalization in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically.
 
 1. __1NF__ : Every column/attribute should have only single value.
@@ -40,7 +42,7 @@ Normalization is a database design technique that reduces data redundancy and el
 4. __BCNF__ : for any dependency A → B, A should be a super key i.e for a dependency A → B, A cannot be a non-prime attribute, if B is a prime attribute.
 
 
-# Indexing
+## Indexing
 Indexing is a data structure technique to efficiently retrieve records from the database files based on some attributes on which the indexing has been done.
 
 - **Dense index** : there is an index record for every search key value in the database. This makes searching faster but requires more space to store index records itself.
@@ -54,7 +56,7 @@ A B+ tree is a balanced binary search tree that follows a multi-level index form
 [sauce](https://www.tutorialspoint.com/dbms/dbms_indexing.htm#:~:text=Indexing%20is%20a%20data%20structure,based%20on%20its%20indexing%20attributes.)
 
 
-# CAP theorem
+## CAP theorem
 
 [a great explaination](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
 
@@ -63,7 +65,7 @@ CAP Theorem is a concept that a distributed database system can only have 2 of t
 ![cap-theorem-triangle](/assets/images/cap-theorem-triangle.png)
 
 
-# SQL vs NoSQL
+## SQL vs NoSQL
 
 | **SQL**           | **NoSql**           |
 | :-----------  | -------------:|
@@ -77,7 +79,7 @@ CAP Theorem is a concept that a distributed database system can only have 2 of t
 | consistency over availabilty & partition tolerance | C,A,P can be traded according to needs |
 
 
-# SQL
+## SQL
 
 3rd highest salary
 ```
@@ -133,7 +135,7 @@ WHERE
 ```
 
 
-## types of commands
+### types of commands
 
 - Data Definition Language : create, drop, truncate, alter, rename
 
@@ -148,7 +150,7 @@ WHERE
 
 > truncate can't be rolled back. we can rollback delete
 
-## Group by
+### Group by
 
 Group By X means put all those with the same value for X in the one group.
 
@@ -166,7 +168,7 @@ GROUP BY YEAR(TransactionDate), MONTH(TransactionDate)
 ORDER BY YEAR(Created), MONTH(Created)
 ```
 
-## Joins
+### Joins
 The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means for combining fields from two tables by using values common to each
 
 - INNER JOIN − returns rows when there is a match in both tables.
@@ -176,7 +178,7 @@ The SQL Joins clause is used to combine records from two or more tables in a dat
 - SELF JOIN − is used to join a table to itself as if the table were two tables, temporarily renaming at least one table in the SQL statement.
 - CARTESIAN JOIN − returns the Cartesian product of the sets of records from the two or more joined tables.
 
-## Trigger
+### Trigger
 A trigger is a stored procedure in database which automatically invokes whenever a special event in the database occurs. 
 ```
 create trigger [trigger_name] 
@@ -202,7 +204,7 @@ or
 `SELECT TOP 10 ROW_NUMBER() FROM sys.objects;`   
 any table with more than 10 rows will do.
 
-## procedures
+### procedures
 
 ```
 delimiter //

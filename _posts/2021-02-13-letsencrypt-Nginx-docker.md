@@ -4,6 +4,11 @@ categories:
   - Deployment
 tags:
   - docker, nginx, ssl, letsencrypt, certbot
+toc: true
+toc_sticky: true
+header:
+  image: /assets/images/docker_nginx_reload.svg
+  teaser: /assets/images/docker_nginx_reload.svg
 ---
 
 So you decided to dockerize your side-project / freelance project, but now its deployment time and you don't know how to get an SSL certificate and to get it to work with a dockerized Nginx server. Don't worry, this article is for you.

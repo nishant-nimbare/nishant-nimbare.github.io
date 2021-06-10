@@ -4,14 +4,11 @@ categories:
   - Interview Experience
 tags:
   - Interview
+toc: true
+toc_sticky: true
 ---
 
-
-1. TOC
-{:toc}
-
-
-all rounds were online
+All rounds were online
 
 ## Round 1 : online test
 

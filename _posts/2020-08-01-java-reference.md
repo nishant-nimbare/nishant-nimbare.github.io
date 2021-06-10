@@ -6,6 +6,7 @@ tags:
   - Reference
   - java
 toc: true
+toc_sticky: true
 ---
 
 ## Encapsulation

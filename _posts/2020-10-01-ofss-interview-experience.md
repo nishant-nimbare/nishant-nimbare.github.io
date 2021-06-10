@@ -4,10 +4,10 @@ categories:
   - Interview Experience
 tags:
   - Interview
+toc: true
+toc_sticky: true
 ---
 
-1. TOC
-{:toc}
 
 the online aptitude test was of 2 and half hours . It consisted of pretty much everything from verbal, Quants, logic based. there was no coding question but there was a section on programming logic and algorithms.
 > note : there were a few questions on avl trees

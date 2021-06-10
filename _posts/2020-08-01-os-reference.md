@@ -5,6 +5,8 @@ categories:
 tags:
   - Reference
   - os
+toc: true
+toc_sticky: true
 ---
 
 
@@ -21,7 +23,7 @@ threads share segments apart from stack and cpu segments.
 ![threads](/assets/images/processVthreads.jpg)
 
 
-# Paging
+## Paging
 process is divided into pages. Main memory is divided into frames. PageSize = frameSize. pages are loaded into frames when required.
 Every process has it PageTable that maps its pages to memory's frames (where the pages are loaded).
 memory management unit converts the logical address(that cpu generates ) to physical address (where the pages are actually loaded in memory)
@@ -31,7 +33,7 @@ there are many page replacement policies : Fifo, Least recently used, least freq
 
 translation lookaside buffer (TLB) is a memory cache that is used to reduce the time taken to access a user memory location. It is a part of the chip's memory-management unit (MMU). The TLB stores the recent translations of virtual memory to physical memory and can be called an address-translation cache.
 
-# Segmentation
+## Segmentation
 Segmentation is a memory management technique in which, the memory is divided into the variable size parts. Each part is known as segment which can be allocated to a process. The details about each segment are stored in a table called as segment table.
 every segment in segment table has :
 1. Base address : address from where segment starts in memory
@@ -47,7 +49,7 @@ Memory block assigned to process is bigger. Some portion of memory is left unuse
 2. External Fragmentation :
 Total memory space is enough to satisfy a request or to reside a process in it, but it is not contiguous, so it cannot be used. Basically there are gaps in memory.  External fragmentation can be reduced by compaction or shuffle memory contents to place all free memory together in one large block. To make compaction feasible, relocation should be dynamic.
 
-# Deadlock 
+## Deadlock 
 Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
 Necessary conditions for deadlock
 1. mutual exclusion : Only one process can use a resource at a time.
@@ -55,13 +57,13 @@ Necessary conditions for deadlock
 3. no preemption : A resource cannot be taken from a process unless the process releases the resource. 
 4. circular wait : A set of processes are waiting for each other in circular form.
 
-## Handling deadlock
+### Handling deadlock
 1. ignore : widely used (windows, linux)
 2. prevention : remove at least one of the 4 conditions of deadlock 
 3. avoidance : Banker's ALgo ,checks safe unsafe sequene.  requires future info
 4. detection & recovery 
 
-# Mutux and semaphore
+## Mutux and semaphore
 Mutex is a locking mechanism that makes sure only one thread can acquire the Mutex at a time and enter the critical section. This thread only releases the Mutex when it exits the critical section.
 
 Semaphore is a signalling mechanism and a thread that is waiting on a semaphore can be signaled by another thread. This is different than a mutex as the mutex can be signaled only by the thread that called the wait function
@@ -75,7 +77,7 @@ also with semaphore, a thread my signal aquire while it is already in critical s
 
 [detailed video](https://www.youtube.com/watch?v=TDzQixSl73M)
 
-# Linux cmds
+## Linux cmds
 
 - Sed : stream editor <br>
 Searching , replacing, insertion, deletion

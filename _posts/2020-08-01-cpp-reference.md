@@ -5,11 +5,9 @@ categories:
 tags:
   - Reference
   - c++
+toc: true
+toc_sticky: true
 ---
-
-
-- TOC
-{:toc}
 
 
 ## Inhertance
@@ -231,7 +229,7 @@ delete operator should only be used either for the pointers pointing to the memo
 input `cin>>x;`
 output `cout<<x;`
 
-##### Arrays
+### Arrays
 ```c++
 int a[10];
 int arr[] = {1,2,3,4};  //creates arr of size 4
@@ -240,9 +238,7 @@ int arr[6] = { 10, 20, 30, 40 };    //creates an array of size 6, initializes fi
 
 ------
 
-#### STL DataStructures
-
-##### Vector
+### Vector
 ```c++
 vector<int> vec;
 
@@ -256,7 +252,7 @@ vector<int> vec;
 .erase(fromItr, toItr)  //   remove range of ele : o(n)
 ```
 
-##### Lists
+### Lists
 non contiguous
 ```c++
 list <int> mlist;
@@ -273,7 +269,7 @@ list <int> mlist;
 .erase(fromItr, toItr)  //   remove range of ele : o(n)
 ```
 
-##### Maps
+### Maps
 
 ```c++
 unordered_map<string, int> umap; 
@@ -285,7 +281,7 @@ map<int, int> gquiz1;
 
 ```
 
-##### Sets
+### Sets
 ```c++
 unordered_set <string> stringSet ;
 set <int, greater <int> > s1 // default increasing;
@@ -297,7 +293,7 @@ set <int, greater <int> > s1 // default increasing;
 ```
 ------
 
-#### Files
+### Files
 ```c++
 fstream myfile("./input.txt", ios_base::in | ios_base::out);
 ios_base::app // append mode

@@ -5,21 +5,23 @@ categories:
   - Interview Experience
 tags:
   - Interview
+toc: true
+toc_sticky: true
 ---
 
 Got to interview through accolite hiring contest drive.
 
-# eduthrill contest 
+## eduthrill contest 
 had to give 20 small contest ( 5 questions each ), with  sucess rate >= 60%
 
-# codelyzer (1 hr):
+## codelyzer (1 hr):
 1 coding question . usually this is a Medium - Hard coding question. 
 Got a graph question could only solve 3/5 testcases.
 
 During onCampus interviews, we had a dynamic programming question.
 
 
-# Tech Interview  (45 min):
+## Tech Interview  (45 min):
 
 1. given an array and 2 numbers x and y find minimum index distance between them
     ```
@@ -44,7 +46,7 @@ During onCampus interviews, we had a dynamic programming question.
 4. ACID and left join
 
 
-# Sponser Round 
+## Sponser Round 
 
 I don't know what sponsor round means, but it is the final round of hiring process.
 I asked my friends who already had the offer from ACH but they didn't have this.
