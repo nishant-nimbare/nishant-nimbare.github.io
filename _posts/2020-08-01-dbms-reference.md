@@ -10,10 +10,6 @@ toc: true
 toc_sticky: true
 ---
 
-
-- TOC
-{:toc}
-
 ## Cardinality
 cardinality refers to the relationship between two tables. Relationship can be of four types : 1 to 1, 1 to many, many to 1 , many to many.
 
