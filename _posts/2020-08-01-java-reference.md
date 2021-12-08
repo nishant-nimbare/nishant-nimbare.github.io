@@ -6,7 +6,6 @@ tags:
   - Reference
   - java
 toc: true
-toc_sticky: true
 ---
 
 ## Encapsulation
@@ -434,6 +433,8 @@ set.remove("Ravi");
 set.addAll(set1);
 set.removeAll(set1);
 set.clear();
+
+set.contains("ravi"); // boolean
 
 for (String i : set)  
   System.out.println(i);
