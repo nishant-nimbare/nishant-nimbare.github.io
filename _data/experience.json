@@ -1,5 +1,12 @@
 [
-{
+    {
+        "company" : "Accolite Digital | Technical Consultant @ Morgan Stanley",
+        "location" : "Mumbai",
+        "role": "Software development Engineer",
+        "from": "July 2021",
+        "to": "Present"
+    },
+    {
         "company" : "Argonaut",
         "location" : "Remote",
         "role": "Software development intern",
