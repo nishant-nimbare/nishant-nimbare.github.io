@@ -16,7 +16,7 @@ permalink: /
 ------
 
 | :-----------  | -------------: |
-| **Dwarkadas J. Sanghvi** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br/> 2017 - 2021                |  __Bachelor of Engineering__, <br/>  Computer Engineering,<br/> _9.09 cgpa_|
+| **Dwarkadas J. Sanghvi** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br/> 2017 - 2021                |  __Bachelor of Engineering__, <br/>  Computer Engineering,<br/> _9.18 cgpa_|
 | **Vidyanidhi Jr college** <br/> 2015 - 2017                | __Higher Secondary__, <br/>  HSC - Science, <br/> _86 %_|
 | **M.B. High School**  <br/> 2005 - 2015 | __Secondary__, <br/>  SSC <br/> _93.8 %_|
 {: style="font-size: large;"}
