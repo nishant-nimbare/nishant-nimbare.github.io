@@ -389,7 +389,21 @@ Note that it's entirely possible that an object never gets garbage collected (an
 int myNum[] = {10, 20, 30, 40};
 int intArray[] = new int[20];
 myNum.length
+
+Arrays.sort(intArray, (a,b)->a-b); //increasing
+Arrays.sort(intArray, (a,b)->b-a); //decreasing
+
+Arrays.sort(intArray, Comparator.comparingInt(o -> o)); //increasing 
+Arrays.sort(intArray, Comparator.comparingInt(o -> o).reversed()); //decreasing
+
+Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
+
+Arrays.sort(Employee[], Comparator.comparing(Employee::getAge).thenComparing(Employee::getName))
+
+
+
 ```
+https://www.baeldung.com/java-8-comparator-comparing
 
 ### List
 ``` java
@@ -414,6 +428,8 @@ hm1.remove(new Integer(4));
 .containsvalue()
 .clear()
 
+hm1.get("key")
+hm1.getOrDefault("key", "default")
 
 //iterating
 for (Map.Entry mapElement : hm1.entrySet()) {
