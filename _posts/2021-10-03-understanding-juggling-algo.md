@@ -45,7 +45,7 @@ the 1st question that pops up in the mind on seeing this is : __why is there a g
 A simple solution is to rotate the array 1 position at a time
 > [1,2,3,4,5,6] --> [6,1,2,3,4,5] -->[5,6,1,2,3,4] .. so on
 
-a much better way would be to move the numbers directly to there final position.
+a much better way would be to move the numbers directly to their final position.
 
 ## Let's juggle
 
@@ -77,29 +77,29 @@ so to solve the above array for k = 4 with minimum steps one would start moving 
 
 
 here we observe 2 things 
-- once we pick up a number, we keep on rotating/replacing the number to there final positions until we don't have any number in hand
-- if we don't have any number in hand, and the array is not rotated completely, we pick up the number next to number that we started with in the last iteration (step 5).
+- once we pick up a number, we keep on rotating/replacing the number to their final positions until we don't have any number in hand
+- if we don't have any number in hand, and the array is not rotated completely, we pick up the number next to the number that we started with in the last iteration (step 5).
 
-In the algorithm code that we saw at the begining, __the inner loop represents our 1st observation & the outer loop represents our 2nd observation__.
+In the algorithm code that we saw at the beginning, __the inner loop represents our 1st observation & the outer loop represents our 2nd observation__.
 
 ## Why gcd why
 
-to understand how gcd come's into play we need to see how exact the inner loop works
+to understand how gcd comes into play we need to see how exact the inner loop works
 
 For a moment instead of considering the array as circular, imagine the array as infinity long with array elements repeated
 
 > [1,2,3,4,5,6,  1,2,3,4,5,6,   1,2,3,...]
 
-now if we start juggling in this array but just replacing numbers ahead i.e not moving back 
-the inner loop will iterate until we replace the same number that we started with (which would be a blank position)
+now if we start juggling in this array but just replacing numbers ahead i.e not moving back, 
+ the inner loop will iterate until we replace the same number that we started with (which would be a blank position)
 
 > [_,2,3,4, 5,6,1,2, 3,4,5,6, 1,2,3,...] : hand = 1
 
-> [_,2,3,4, 1,6,1,2, 3,4,5,6, 1,2,3,...] : hand = 5
+> [_,2,3,4, __1__,6,1,2, 3,4,5,6, 1,2,3,...] : hand = 5
 
-> [_,2,3,4, 1,6,1,2, 5,4,5,6, 1,2,3,...] : hand = 3
+> [_,2,3,4, 1,6,1,2, __5__,4,5,6, 1,2,3,...] : hand = 3
 
-> [_,2,3,4, 1,6,1,2, 5,4,5,6, 3,2,3,...] : hand = 1 / _
+> [_,2,3,4, 1,6,1,2, 5,4,5,6, __3__,2,3,...] : hand = 1 / _
 
 if we observe closely there are 2 intervals going on 
 - one with length = 6 i.e array length after which array is repeated
@@ -117,7 +117,7 @@ So the inner while loop will run ( LCM(n,d) / d ) times
 
 Now the total number of elements to be rotated = n
 
-so the number of iteration of outer for loop should be
+so the number of iterations of the outer for loop should be
 >= n / (no. of iterations of inner loop)
 
 >= n / ( LCM(n, d) / d )
