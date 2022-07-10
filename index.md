@@ -12,6 +12,22 @@ permalink: /
 <br/>
 
 
+[![Nishant's github stats](https://github-readme-stats.vercel.app/api?username=nishant-nimbare&count_private=true&show_icons=true&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
+
+
+![Nishant's LeetCode Stats](https://leetcode.card.workers.dev/nishant-nimbare?theme=dark&font=source_code_pro&extension=null)
+
+<br>
+<br>
+
+# Experience
+------
+{% include timeline.html %}
+
+<br>
+<br>
+
+
 # Education
 ------
 
@@ -23,12 +39,6 @@ permalink: /
 <br/>
 <br/>
 
-# Experience
-------
-{% include timeline.html %}
-
-<br>
-<br>
 
 # Skills
 ------

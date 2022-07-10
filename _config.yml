@@ -16,7 +16,7 @@
 title: Nishant Nimbare
 email: nishantnimbare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am currently in my final year pursuing a major in Computer Engineering at DJSCE.
+  Software Engineering at Accolite Digital | Technical Consultant at Morgan Stanley.
 twitter_username: nishantnimbare
 github_username: nishant-nimbare
 minimal_mistakes_skin: dark
@@ -68,7 +68,7 @@ analytics:
 author:
   name   : "Nishant Nimbare"
   avatar : "/assets/images/panda.jpeg"
-  bio    : "I am currently in my final year pursuing Computer Engineering at DJSCE."
+  bio    : "SWE @ Accolite | DJSCE."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
@@ -79,9 +79,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/nishant-nimbare/"  
-    # - label: "Codechef"
-    #   icon: "fab fa-fw fa-code"
-    #   url: "https://www.codechef.com/users/nishantnimbare"
+    - label: "LeetCode"
+      icon: "fab fa-fw fa-code"
+      url: "https://leetcode.com/nishant-nimbare/"
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
     #   url: "https://gitlab.com/nishant-nimbare"
