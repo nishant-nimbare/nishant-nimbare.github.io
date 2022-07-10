@@ -10,6 +10,7 @@ permalink: /projects/
 {: style="text-align: center;"}
 
 ![Nishant's LeetCode Stats](https://leetcode.card.workers.dev/nishant-nimbare?theme=dark&font=source_code_pro&extension=null)
+{: style="text-align: center;"}
 <br>
 
 {% include projects.html %}
