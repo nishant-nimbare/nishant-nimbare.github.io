@@ -16,7 +16,7 @@
 title: Nishant Nimbare
 email: nishantnimbare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Engineering at Accolite Digital | Technical Consultant at Morgan Stanley.
+  Software Development Engineer at Amazon.
 twitter_username: nishantnimbare
 github_username: nishant-nimbare
 minimal_mistakes_skin: dark
@@ -68,7 +68,7 @@ analytics:
 author:
   name   : "Nishant Nimbare"
   avatar : "/assets/images/panda.jpeg"
-  bio    : "SWE @ Accolite | DJSCE."
+  bio    : "SDE 1 @ Amazon | DJSCE."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
