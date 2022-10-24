@@ -9,6 +9,9 @@ tags:
   - load balancer
   - micro services
 toc: true
+header:
+  image: /assets/images/flow_chart_symbol.svg
+  teaser: /assets/images/flow_chart_symbol.svg
 ---
 
 ## Services & Single Point of Failures
@@ -21,7 +24,7 @@ But just by simply adding a load balancer doesn't fix SPOF because the load bala
 one can see that we need to have multipe LBs and distribute traffic amongst these LBs to resolve this.
 
 
-TCP needs IP addresses to create a connection and tranfer data. so there are 2 ways to solve the above problem
+TCP needs IP addresses to create a connection and transfer data. so there are 2 ways to solve the above problem
 1. we map multiple LBs (machines) to 1 single IP
 2. we give multiple IPs to the client itself and hope that it tries a different ip on failure.
 
