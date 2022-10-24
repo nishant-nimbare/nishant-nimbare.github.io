@@ -10,8 +10,8 @@ tags:
   - micro services
 toc: true
 header:
-  image: /assets/images/flow_chart_symbol.svg
-  teaser: /assets/images/flow_chart_symbol.svg
+  image: /assets/images/single_point.svg
+  teaser: /assets/images/single_point.svg
 ---
 
 ## Services & Single Point of Failures
@@ -21,7 +21,7 @@ A [single point of failure (SPOF)](https://en.wikipedia.org/wiki/Single_point_of
 It is common practice to introduce multiple copies of service in order to increase availability & remove SPOF. Usually a Load Balancer (LB) is added in front of the services to distribute requests amongst the services.
 
 But just by simply adding a load balancer doesn't fix SPOF because the load balancer (LB) itself is SPOF as all the traffic is moving through it. we have just pushed SPOF 1 layer up.
-one can see that we need to have multipe LBs and distribute traffic amongst these LBs to resolve this.
+one can see that we need to have multiple LBs and distribute traffic amongst these LBs to resolve this.
 
 
 TCP needs IP addresses to create a connection and transfer data. so there are 2 ways to solve the above problem
@@ -48,9 +48,9 @@ Some OP DNS services like AWS Route 53 can dynamically change the list of ip add
 
 but 1 thing to consider there is that DNS records are cached at multiple levels so the failover will not be instantaneous.
 
-## Closing
+## Better left for pros
 
-Cloud Providers offering load balancers possibly use both these methods to scale and increase availaliblity.
+Cloud Providers offering load balancers possibly use both these methods to scale and increase availability.
 below is taken from [user guide of AWS ELB (elastic load balancer)](https://github.com/awsdocs/elb-user-guide/blob/master/doc_source/how-elastic-load-balancing-works.md#request-routing) 
 
 >Before a client sends a request to your load balancer, it resolves the load balancer's domain name using a Domain Name System (DNS) server. The DNS entry is controlled by Amazon, because your load balancers are in the amazonaws.com domain. The Amazon DNS servers return one or more IP addresses to the client. These are the IP addresses of the load balancer nodes for your load balancer...
