@@ -3,7 +3,10 @@ title: "Understanding juggling Algorithm"
 categories:
   - Algorithm
 tags:
-  - algo, cp, arrays, juggling_algo
+  - algo
+  - cp
+  - arrays
+  - juggling_algo
 toc: true
 ---
 
