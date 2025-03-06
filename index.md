@@ -6,7 +6,7 @@ permalink: /
 ---
 
 | :-----------  | -------------: |
-| ![profile photo](/assets/images/me.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently working as SDE 1 @ Amazon. <br/><br/> "A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ |
+| ![profile photo](/assets/images/me.jpeg){:style="border-radius: 50%; float: left"} | Hi, Nishant here.<br/> I am currently working as SDE II @ Amazon. <br/><br/> "A program is never less than 90% complete, and never more than 95% complete." - _Terry Baker_ |
 {: style="font-size: large;"}
 <br/>
 <br/>
