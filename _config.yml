@@ -67,8 +67,8 @@ analytics:
 
 author:
   name   : "Nishant Nimbare"
-  avatar : "/assets/images/panda.jpeg"
-  bio    : "SDE 1 @ Amazon | DJSCE."
+  avatar : "/assets/images/new-bio-image.jpeg"
+  bio    : "SDE II @ Amazon | DJSCE."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
